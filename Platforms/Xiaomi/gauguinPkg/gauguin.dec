@@ -1,0 +1,10 @@
+[Defines]
+  DEC_SPECIFICATION                   = 0x00010005
+  PACKAGE_NAME                        = gauguin
+  PACKAGE_GUID                        = 5EEA90BF-9E7F-45E1-A3DC-237B8D7CD761
+  PACKAGE_VERSION                     = 0.1
+
+[Guids]
+  # NOTE: For these Values you need to use the GUID you generated earlier!
+  # These are just example Values.
+  ggauguinTokenSpaceGuid    = { 0x5eea90bf, 0x9e7f, 0x45e1, { 0xa3, 0xdc, 0x23, 0x7b, 0x8d, 0x7c, 0xd7, 0x61 } }
