@@ -84,4 +84,4 @@
   gEfiMdeModulePkgTokenSpaceGuid.PcdConOutColumn|135
   gEfiMdeModulePkgTokenSpaceGuid.PcdConOutRow|126
 
-!include <SoC Codename>Pkg/gauguin.dsc.inc
+!include SM7225Pkg/gauguin.dsc.inc
