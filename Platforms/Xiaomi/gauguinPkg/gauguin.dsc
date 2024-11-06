@@ -38,6 +38,7 @@
 [LibraryClasses]
   DeviceMemoryMapLib|gauguinPkg/Library/DeviceMemoryMapLib/DeviceMemoryMapLib.inf
   DeviceConfigurationMapLib|gauguinPkg/Library/DeviceConfigurationMapLib/DeviceConfigurationMapLib.inf
+  DevicePrePiLib|gauguinPkg/Library/DevicePrePiLib/DevicePrePiLib.inf
 
 [PcdsFixedAtBuild]
   # DDR Start Address
@@ -54,22 +55,22 @@
   gEmbeddedTokenSpaceGuid.PcdPrePiStackSize|0x00040000
 
   # SmBios
-  gQcomPkgTokenSpaceGuid.PcdSmbiosSystemVendor|"Xiaomi"
-  gQcomPkgTokenSpaceGuid.PcdSmbiosSystemModel|"Mi 10T Lite / Mi 10i / Redmi Note 9 Pro 5G"
-  gQcomPkgTokenSpaceGuid.PcdSmbiosSystemRetailModel|"gauguin"
-  gQcomPkgTokenSpaceGuid.PcdSmbiosSystemRetailSku|"Mi_10T_Lite_gauguin"
-  gQcomPkgTokenSpaceGuid.PcdSmbiosBoardModel|"Mi 10T Lite / Mi 10i / Redmi Note 9 Pro 5G"
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemVendor|"Xiaomi"
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemModel|"Mi 10T Lite / Mi 10i / Redmi Note 9 Pro 5G"
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemRetailModel|"gauguin"
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosSystemRetailSku|"Mi_10T_Lite_gauguin"
+  gSiliciumPkgTokenSpaceGuid.PcdSmbiosBoardModel|"Mi 10T Lite / Mi 10i / Redmi Note 9 Pro 5G"
 
   # Simple FrameBuffer
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1080
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2040
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferColorDepth|24
+  gSiliciumPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1080
+  gSiliciumPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2040
+  gSiliciumPkgTokenSpaceGuid.PcdMipiFrameBufferColorDepth|24
 
   # Dynamic RAM Start Address
   gQcomPkgTokenSpaceGuid.PcdRamPartitionBase|0xB0EA0000
 
   # SD Card Slot
-  gQcomPkgTokenSpaceGuid.PcdSDCardSlotPresent|TRUE             # If your Phone has no SD Card Slot, Set it to FALSE.
+  gQcomPkgTokenSpaceGuid.PcdInitCardSlot|TRUE             # If your Phone has no SD Card Slot, Set it to FALSE.
   
   # USB Controller
   gQcomPkgTokenSpaceGuid.PcdStartUsbController|TRUE            # This should be TRUE unless your UsbConfigDxe is Patched to be Dual Role.
@@ -84,4 +85,4 @@
   gEfiMdeModulePkgTokenSpaceGuid.PcdConOutColumn|135
   gEfiMdeModulePkgTokenSpaceGuid.PcdConOutRow|126
 
-!include SM7225Pkg/gauguin.dsc.inc
+!include SM7225Pkg/SM7225Pkg.dsc.inc

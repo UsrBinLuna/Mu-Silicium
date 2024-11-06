@@ -16,7 +16,7 @@ APRIORI DXE {
 
     INF Binaries/gauguin/QcomPkg/Drivers/SmemDxe/SmemDxe.inf
 
-    INF QcomPkg/Drivers/DynamicRAMDxe/DynamicRAMDxe.inf
+    INF QcomPkg/Drivers/DynamicRamDxe/DynamicRamDxe.inf
 
     INF Binaries/gauguin/QcomPkg/Drivers/SecRSADxe/SecRSADxe.inf
     INF Binaries/gauguin/QcomPkg/Drivers/ASN1X509Dxe/ASN1X509Dxe.inf
@@ -43,7 +43,6 @@ APRIORI DXE {
     INF MdeModulePkg/Universal/DevicePathDxe/DevicePathDxe.inf
     INF MdeModulePkg/Universal/CapsuleRuntimeDxe/CapsuleRuntimeDxe.inf
     INF MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
-    INF ArmPkg/Drivers/ArmPsciMpServicesDxe/ArmPsciMpServicesDxe.inf
     INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
 
     INF Binaries/gauguin/QcomPkg/Drivers/ChipInfoDxe/ChipInfoDxe.inf
