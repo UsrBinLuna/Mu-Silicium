@@ -176,8 +176,8 @@ ProcessorInfoUpdateSmbiosType4 ()
   mProcessorInfoType4Strings[2] = (CHAR8 *)FixedPcdGetPtr(PcdSmbiosProcessorModel);
   mProcessorInfoType4Strings[3] = (CHAR8 *)FixedPcdGetPtr(PcdSmbiosProcessorRetailModel);
 
-  LogSmbiosData ((EFI_SMBIOS_TABLE_HEADER *)&mProcessorInfoType4_a73, mProcessorInfoType4Strings, NULL);
-  LogSmbiosData ((EFI_SMBIOS_TABLE_HEADER *)&mProcessorInfoType4_a53, mProcessorInfoType4Strings, NULL);
+  LogSmbiosData ((EFI_SMBIOS_TABLE_HEADER *)&mProcessorInfoType4_a77, mProcessorInfoType4Strings, NULL);
+  LogSmbiosData ((EFI_SMBIOS_TABLE_HEADER *)&mProcessorInfoType4_a55, mProcessorInfoType4Strings, NULL);
 }
 
 VOID
@@ -185,7 +185,9 @@ CacheInfoUpdateSmbiosType7 ()
 {
   EFI_SMBIOS_HANDLE SmbiosHandle;
 
-  LogSmbiosData ((EFI_SMBIOS_TABLE_HEADER *)&mCacheInfoType7_L1IC, mCacheInfoType7_L1ICStrings, NULL);
+  LogSmbiosData ((EFI_SMBIOS_TABLE_HEADER *)&mCacheInfoType7_L1IC_a77, mCacheInfoType7_L1ICStrings, NULL);
+
+  LogSmbiosData ((EFI_SMBIOS_TABLE_HEADER *)&mCacheInfoType7_L1IC_a55, mCacheInfoType7_L1ICStrings, NULL);
 
   LogSmbiosData ((EFI_SMBIOS_TABLE_HEADER *)&mCacheInfoType7_L1DC_a77, mCacheInfoType7_L1DCStrings, &SmbiosHandle);
   
@@ -197,14 +199,14 @@ CacheInfoUpdateSmbiosType7 ()
 
   LogSmbiosData ((EFI_SMBIOS_TABLE_HEADER *)&mCacheInfoType7_L2C_a77, mCacheInfoType7_L2CStrings, &SmbiosHandle);
 
-  LogSmbiosData ((EFI_SMBIOS_TABLE_HEADER *)&mCacheInfoType7_L2C_a5, mCacheInfoType7_L2CStrings, &SmbiosHandle);
+  LogSmbiosData ((EFI_SMBIOS_TABLE_HEADER *)&mCacheInfoType7_L2C_a55, mCacheInfoType7_L2CStrings, &SmbiosHandle);
 
   mProcessorInfoType4_a77.L2CacheHandle = (UINT16)SmbiosHandle;
   mProcessorInfoType4_a55.L2CacheHandle = (UINT16)SmbiosHandle;
 
-  LogSmbiosData ((EFI_SMBIOS_TABLE_HEADER *)&mCacheInfoType7_L3C_a77, mCacheInfoType7_L2CStrings, &SmbiosHandle);
+  LogSmbiosData ((EFI_SMBIOS_TABLE_HEADER *)&mCacheInfoType7_L3C_a77, mCacheInfoType7_L3CStrings, &SmbiosHandle);
 
-  mProcessorInfoType4.L3CacheHandle = (UINT16)SmbiosHandle;
+  mProcessorInfoType4_a77.L3CacheHandle = (UINT16)SmbiosHandle;
 
 }
 

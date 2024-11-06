@@ -582,7 +582,7 @@ SMBIOS_TABLE_TYPE7 mCacheInfoType7_L2C_a55 = {
   CacheAssociativity8Way // Associativity
 };
 
-SMBIOS_TABLE_TYPE7 mCacheInfoType7_L3C = {
+SMBIOS_TABLE_TYPE7 mCacheInfoType7_L3C_a77 = {
   {EFI_SMBIOS_TYPE_CACHE_INFORMATION, sizeof(SMBIOS_TABLE_TYPE7), 0},
   1,      // SocketDesignation String
   0x0282, // Cache Configuration

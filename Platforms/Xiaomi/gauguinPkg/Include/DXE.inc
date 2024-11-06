@@ -1,4 +1,3 @@
-APRIORI DXE {
     INF MdeModulePkg/Core/Dxe/DxeMain.inf
     INF MdeModulePkg/Universal/PCD/Dxe/Pcd.inf
 
@@ -18,9 +17,6 @@ APRIORI DXE {
 
     INF QcomPkg/Drivers/DynamicRamDxe/DynamicRamDxe.inf
 
-    INF Binaries/gauguin/QcomPkg/Drivers/SecRSADxe/SecRSADxe.inf
-    INF Binaries/gauguin/QcomPkg/Drivers/ASN1X509Dxe/ASN1X509Dxe.inf
-    INF Binaries/gauguin/QcomPkg/Drivers/VerifiedBootDxe/VerifiedBootDxe.inf
     #INF Binaries/gauguin/QcomPkg/Drivers/TzDxe/ScmDxeLA.inf
     #INF Binaries/gauguin/QcomPkg/Drivers/TzDxe/TzDxeLA.inf
     INF Binaries/gauguin/MdeModulePkg/Universal/WatchdogTimerDxe/WatchdogTimer.inf
@@ -51,7 +47,7 @@ APRIORI DXE {
     INF Binaries/gauguin/QcomPkg/Drivers/CmdDbDxe/CmdDbDxe.inf
     INF Binaries/gauguin/QcomPkg/Drivers/PwrUtilsDxe/PwrUtilsDxe.inf
     INF Binaries/gauguin/QcomPkg/Drivers/RpmhDxe/RpmhDxe.inf
-    INF Binaries/gauguin/QcomPkg/Drivers/CPRDxe/CPRDxe.inf
+    #INF Binaries/gauguin/QcomPkg/Drivers/CPRDxe/CPRDxe.inf
     INF Binaries/gauguin/QcomPkg/Drivers/PdcDxe/PdcDxe.inf
 
     INF MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe.inf
@@ -100,4 +96,3 @@ APRIORI DXE {
     INF Binaries/gauguin/QcomPkg/Drivers/ShmBridgeDxe/ShmBridgeDxeLA.inf
 
     INF MdeModulePkg/Bus/Usb/UsbMouseAbsolutePointerDxe/UsbMouseAbsolutePointerDxe.inf
-}

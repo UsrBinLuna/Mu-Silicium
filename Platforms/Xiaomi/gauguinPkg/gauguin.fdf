@@ -98,7 +98,7 @@ READ_LOCK_STATUS   = TRUE
   INF SM7225Pkg/Drivers/SmBiosTableDxe/SmBiosTableDxe.inf
 
   # ACPI Tables
-  !include Include/ACPI.inc
+  # !include Include/ACPI.inc
 
   INF DfciPkg/IdentityAndAuthManager/IdentityAndAuthManagerDxe.inf
 

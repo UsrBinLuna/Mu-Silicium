@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Build an Android kernel that is actually UEFI disguised as the Kernel
-cat ./BootShim/AARCH64/BootShim.bin "./Build/gauguinPkg/${_TARGET_BUILD_MODE}_CLANGPDB/FV/gauguin_UEFI.fd" > "./Build/gauguinPkg/${_TARGET_BUILD_MODE}_CLANGPDB/FV/gauguin_UEFI.fd-bootshim"||exit 1
-gzip -c < "./Build/gauguinPkg/${_TARGET_BUILD_MODE}_CLANGPDB/FV/gauguin_UEFI.fd-bootshim" > "./Build/gauguinPkg/${_TARGET_BUILD_MODE}_CLANGPDB/FV/gauguin_UEFI.fd-bootshim.gz"||exit 1
-cat "./Build/gauguinPkg/${_TARGET_BUILD_MODE}_CLANGPDB/FV/gauguin_UEFI.fd-bootshim.gz" ./Resources/DTBs/gauguin.dtb > ./Resources/bootpayload.bin||exit 1
+cat ./BootShim/AARCH64/BootShim.bin "./Build/gauguinPkg/${_TARGET_BUILD_MODE}_CLANGPDB/FV/GAUGUIN_UEFI.fd" > "./Build/gauguinPkg/${_TARGET_BUILD_MODE}_CLANGPDB/FV/GAUGUIN_UEFI.fd-bootshim"||exit 1
+gzip -c < "./Build/gauguinPkg/${_TARGET_BUILD_MODE}_CLANGPDB/FV/GAUGUIN_UEFI.fd-bootshim" > "./Build/gauguinPkg/${_TARGET_BUILD_MODE}_CLANGPDB/FV/GAUGUIN_UEFI.fd-bootshim.gz"||exit 1
+cat "./Build/gauguinPkg/${_TARGET_BUILD_MODE}_CLANGPDB/FV/GAUGUIN_UEFI.fd-bootshim.gz" ./Resources/DTBs/gauguin.dtb > ./Resources/bootpayload.bin||exit 1
 
 # Create bootable Android boot.img
 python3 ./Resources/Scripts/mkbootimg.py \

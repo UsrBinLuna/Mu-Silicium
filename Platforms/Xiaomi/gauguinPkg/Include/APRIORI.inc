@@ -18,16 +18,16 @@ APRIORI DXE {
 
     INF QcomPkg/Drivers/DynamicRamDxe/DynamicRamDxe.inf
 
-    INF Binaries/gauguin/QcomPkg/Drivers/SecRSADxe/SecRSADxe.inf
-    INF Binaries/gauguin/QcomPkg/Drivers/ASN1X509Dxe/ASN1X509Dxe.inf
-    INF Binaries/gauguin/QcomPkg/Drivers/VerifiedBootDxe/VerifiedBootDxe.inf
-    #INF Binaries/gauguin/QcomPkg/Drivers/TzDxe/ScmDxeLA.inf
-    #INF Binaries/gauguin/QcomPkg/Drivers/TzDxe/TzDxeLA.inf
+    INF Binaries/gauguin/QcomPkg/Drivers/DALSYSDxe/DALSYSDxe.inf
+    INF Binaries/gauguin/QcomPkg/Drivers/TzDxe/ScmDxeLA.inf
+    INF Binaries/gauguin/QcomPkg/Drivers/TzDxe/TzDxeLA.inf
     INF Binaries/gauguin/MdeModulePkg/Universal/WatchdogTimerDxe/WatchdogTimer.inf
     INF Binaries/gauguin/QcomPkg/Drivers/VariableDxe/VariableDxe.inf
-    INF Binaries/gauguin/QcomPkg/Drivers/ResetRuntimeDxe/ResetRuntimeDxe.inf
+    INF Binaries/gauguin/QcomPkg/Drivers/VcsDxe/VcsDxe.inf
+    INF Binaries/gauguin/QcomPkg/Drivers/ClockDxe/ClockDxe.inf
 
     INF EmbeddedPkg/SimpleTextInOutSerial/SimpleTextInOutSerial.inf
+    INF MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
     INF MdeModulePkg/Universal/Console/ConPlatformDxe/ConPlatformDxe.inf
     INF MdeModulePkg/Universal/Console/ConSplitterDxe/ConSplitterDxe.inf
     INF MdeModulePkg/Universal/Console/GraphicsConsoleDxe/GraphicsConsoleDxe.inf
@@ -42,7 +42,6 @@ APRIORI DXE {
     INF MdeModulePkg/Universal/PrintDxe/PrintDxe.inf
     INF MdeModulePkg/Universal/DevicePathDxe/DevicePathDxe.inf
     INF MdeModulePkg/Universal/CapsuleRuntimeDxe/CapsuleRuntimeDxe.inf
-    INF MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
     INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
 
     INF Binaries/gauguin/QcomPkg/Drivers/ChipInfoDxe/ChipInfoDxe.inf
@@ -51,17 +50,13 @@ APRIORI DXE {
     INF Binaries/gauguin/QcomPkg/Drivers/CmdDbDxe/CmdDbDxe.inf
     INF Binaries/gauguin/QcomPkg/Drivers/PwrUtilsDxe/PwrUtilsDxe.inf
     INF Binaries/gauguin/QcomPkg/Drivers/RpmhDxe/RpmhDxe.inf
-    INF Binaries/gauguin/QcomPkg/Drivers/CPRDxe/CPRDxe.inf
+    #INF Binaries/gauguin/QcomPkg/Drivers/CPRDxe/CPRDxe.inf
     INF Binaries/gauguin/QcomPkg/Drivers/PdcDxe/PdcDxe.inf
 
     INF MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe.inf
     INF MdeModulePkg/Universal/Disk/PartitionDxe/PartitionDxe.inf
     INF FatPkg/EnhancedFatDxe/Fat.inf
     INF MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe.inf
-
-    INF Binaries/gauguin/QcomPkg/Drivers/DALSYSDxe/DALSYSDxe.inf
-    INF Binaries/gauguin/QcomPkg/Drivers/VcsDxe/VcsDxe.inf
-    INF Binaries/gauguin/QcomPkg/Drivers/ClockDxe/ClockDxe.inf
 
     INF QcomPkg/Drivers/ClockSpeedUpDxe/ClockSpeedUpDxe.inf
 
