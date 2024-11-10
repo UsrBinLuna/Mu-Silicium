@@ -59,7 +59,7 @@
     INF Binaries/gauguin/QcomPkg/Drivers/VcsDxe/VcsDxe.inf
     INF Binaries/gauguin/QcomPkg/Drivers/ClockDxe/ClockDxe.inf
 
-    INF QcomPkg/Drivers/ClockSpeedUpDxe/ClockSpeedUpDxe.inf
+    #INF QcomPkg/Drivers/ClockSpeedUpDxe/ClockSpeedUpDxe.inf
 
     INF Binaries/gauguin/QcomPkg/Drivers/HALIOMMUDxe/HALIOMMUDxe.inf
     INF Binaries/gauguin/QcomPkg/Drivers/HWIODxe/HWIODxe.inf
